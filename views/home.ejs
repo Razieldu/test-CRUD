@@ -1,0 +1,87 @@
+ <%- include("partials/header"); -%>
+  <body>
+   <div class="">
+     <div class="products">
+      <div class="number">
+       number
+      </div>
+      <div class="picture">
+      picture
+        </div>
+      <div class="divice_id">
+   divice_id
+      </div>
+      <div class="caputure_at">
+      caputure_at
+      </div>
+      <div class="matadata_id">
+      matadata_id
+      </div>
+      <div class="status">
+       status
+      </div>
+      <div class="Edit">
+
+       edit
+      </div>
+      <div class="Delete">
+
+     delete
+      </div>
+      <div class="Add">
+
+     <button type="button" name="button"><a href="/add">add</a></button>
+      </div>
+   </div>
+   <%for(let i=0;i<startingContent.length;i++){ %>
+
+     <div class="products">
+      <div class="number">
+      <%=startingContent[i].number%>
+      </div>
+      <div class="picture">
+      <img src="<%=startingContent[i].picture%>" alt="">
+      </div>
+      <div class="divice_id">
+        <%=startingContent[i].divice_id%>
+
+      </div>
+      <div class="caputure_at">
+
+          <%=startingContent[i].captured_at%>
+      </div>
+      <div class="matadata_id">
+            <%=startingContent[i].matadata_id%>
+      </div>
+      <div class="status">
+          <%=startingContent[i].status%>
+      </div>
+      <div class="Edit">
+
+       <!-- <form method="post" > -->
+          <a href="/update/<%=startingContent[i]._id%>"><button type="submit" name="button">edit</button></a>
+       <!-- </form> -->
+
+      </div>
+      <div class="Delete">
+      <form  action="/delete/<%=startingContent[i]._id%>" method="post">
+
+
+            <%eval("const"+ i+"item=startingContent["+i+"]._id")%>
+
+
+         <button type="submit" name="button">delete</button>
+      </form>
+
+      </div>
+      <div class="status">
+
+      </div>
+   </div>
+
+  <%}%>
+
+
+  </div>
+  </body>
+  <%- include("partials/footer"); -%>

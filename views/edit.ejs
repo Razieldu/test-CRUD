@@ -1,0 +1,39 @@
+<%- include("partials/header"); -%>
+
+<body>
+  <div class="newnew">
+    <h1>新物件</h1>
+    <div class="addnew">
+      <form class="" action="/update/<%=startingContent._id%>" method="post">
+        <div class="a1">
+          <label for="">picture</label>
+          <input type="file" name="photo" value="">
+        </div>
+     <div class="a2">
+       <label for="">device_id</label>
+       <input type="text" name="device_id" value="<%=startingContent.divice_id%>">
+     </div>
+     <div class="a3">
+       <label for="">channel_id</label>
+       <select class="" name="channel_id" value="<%=startingContent.channel_id%>">
+         <option name="option" value="1">1</option>
+         <option name="option" value="2">2</option>
+         <option name="option" value="3">3</option>
+       </select>
+     </div>
+       <div class="a4">
+         <label for="">captured_at</label>
+         <input type="text" name="captured_at" value="<%=startingContent.captured_at%>">
+       </div>
+       <div class="a5">
+         <label for="">matadata_id</label>
+         <input type="text" name="matadata_id" value="<%=startingContent.matadata_id%>">
+       </div>
+       <button type="submit" >添加</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+<%-include("partials/footer"); -%>

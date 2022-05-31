@@ -1,0 +1,9 @@
+資料庫連接到MongoDB Atlas 
+
+
+建構好每一列的格式之後查找資料庫物件數量,使用for loop 進行同數量的渲染(使用ejs)
+
+app.get 物件在查找並渲染到home.ejs同時直接把資料庫裡的物件id 儲存在form的 action值以及edit按鈕超連結的href裡面
+
+並使用req.param.id確定物件id,進行刪除以及更新的動作
+

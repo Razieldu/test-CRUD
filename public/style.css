@@ -1,0 +1,77 @@
+h1{
+
+color:black
+}
+
+a{
+text-decoration:none;
+
+}
+
+
+
+input{
+margin-left:10px;
+display: block;
+}
+
+
+.newnew{
+
+padding: 100px 40% ;
+border: solid 10px color:red;
+}
+
+
+
+
+
+.a1,.a2,.a3,.a4,.a5{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.products{
+
+height:50px;
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(100px,120px));
+/* background-color: blue; */
+
+}
+
+.number{
+
+height:50px;
+/* background-color:red; */
+
+}
+
+
+.divice_id{
+
+  height:50px;
+/* background-color:green; */
+
+}
+
+.caputure_at{
+
+  height:50px;
+/* background-color:yellow; */
+}
+.matadata_id{
+
+  height:50px;
+/* background-color:purple; */
+
+}
+.edit{
+
+/* background-color:yellow; */
+}
+.delete{
+  /* background-color:purple; */
+}
